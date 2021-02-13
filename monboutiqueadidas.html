@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<HTML>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="testing for my knowldege in html and css">
+      <title>MonBoutiqueAdidas </title>
+      <link rel="styecheet" href="style.css">
+      <script>
+         function sendsucess(){
+            alert("sucess ");
+         }
+
+      </script>
+      <style>
+         fieldset{border: 1px solid #efefed; padding:20px ;width: 500px; margin: 20px auto; background-color: rgba(190, 204, 181, 0.795);}
+         legend{color: darkorange; padding: 5px; margin: 10px; font-weight: 400;font-size: large; background-color: khaki; font-weight:unset;}
+         .x{ background-color: gray;}
+         label input select { display: block;}
+         label{font-weight: bold; font-family:monospace; margin-bottom: 20px;}
+         input{margin-bottom: 10px;}
+        
+         a{
+            
+            background-color:lemonchiffon;
+            padding: 10px;
+            margin: 20px;
+            color: brown;
+         }
+         input[type="text"] ,input[type="password"] {
+           
+              padding: 8px; width: 500px;
+
+         }
+         hr{background: ivory; width: 400px;}
+         
+         
+
+
+         
+
+      </style>
+   </head>
+   <body class="x">
+      <form method="POST">
+      <fieldset>
+         <legend>Personnel Information</legend>
+         <label>username</label>
+         <input type="text"  placeholder="enter your name" value="username">
+         <label>Email</label>
+         <input type="text"  placeholder="enter your email" value="email">
+         <label>Password</label>
+         <input type="password"  value="password" placeholder="enter your Password">
+         <label>Adresse </label>
+         <input type="text"  placeholder="enter your Adresse">
+         <label>Code Postal</label>
+         <input type="text"  placeholder="enter your Code Postal" maxlength="4" value="cp"><br>
+         <label>Gender</label>
+        <select>
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+
+        </select>
+      </fieldset>
+      <fieldset>
+         <legend>Store content</legend>
+         <a href="https://www.adidas.com/us/shoes?grid=true" target="_blank">Shoes</a>
+         <a href="https://www.adidas.com/us/apparel?grid=true" target="_blank">clothing</a>
+         <a href="https://www.adidas.com/us/best_sellers" target="_blank" >best_sellers</a>
+         <a href="https://www.adidas.com/us/new_arrivals" target="_blank">new_arrivals</a>
+
+        </fieldset>
+        <fieldset>
+          <legend>Payment method</legend>
+          <label>giving cash money</label><br>
+            <input type="radio" value="cash"> cash <br>
+            <image src="https://tse2.mm.bing.net/th?id=OIP.7BxGJVbHX41WBxG1KZLs2gHaE8&pid=Api&P=0&w=242&h=162" width="100" height="100">
+              <hr>
+            <label>mastercard </label><br>
+            <input type="radio" value="mc">MasterCard <br>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.IFATrV6ZrvBdbKIBqaw6MQHaEl&pid=Api&P=0&w=266&h=165"width="100" height="100">
+              <hr>
+            <label>bank card</label><br>
+            <input type="radio" value="bc"> bank card <br>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.1noVfbUQ3eOirbuIr9cjqAHaE2&pid=Api&P=0&w=251&h=165"width="100" height="100">
+            </image>
+            <input type="button" value="send" onclick="sendsucess()">
+            <input type="submit" value="reset">
+            <input type="submit" value="back" >
+         </fieldset>
+         
+      </form>
+   </body>
+</HTML>
